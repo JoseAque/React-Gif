@@ -1,9 +1,11 @@
+const API_KEY = import.meta.env.VITE_API_KEY; // Importamos la clave de API de Giphy desde las variables de entorno
+
 // Definimos una función asíncrona getGifs que toma una categoría como argumento 
 export const getGifs = async( category ) => { 
  
     // Construimos la URL para la API de Giphy con la categoría y un límite de 10  imágenes 
     const url = 
-`https://api.giphy.com/v1/gifs/search?api_key=KEYAPI&q=${ category 
+`https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${ category  //Usamos la variable de entorno API_KEY para la clave de API
 }&limit=10`; 
     // Hacemos una petición a la API de Giphy 
     const resp = await fetch( url ); 

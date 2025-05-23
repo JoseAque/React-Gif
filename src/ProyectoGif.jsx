@@ -16,7 +16,7 @@ export const ProyectoGif = () => {
   // Devolvemos el JSX que se renderizará 
   return ( 
     <> 
-      <h1>ProyectoJoseAque</h1> 
+      <h1>GIF's - 10 Resultados</h1> 
       {/* // Renderizamos el componente AddCategory y le pasamos una función que se 
 activará cuando se agregue una nueva 
       categoría */} 
