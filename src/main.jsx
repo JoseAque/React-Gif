@@ -2,6 +2,7 @@ import React from 'react' //Importa el modo estricto de React
 import ReactDOM from 'react-dom/client' //Importa el DOM de React para poder renderizar la app 
 import { ProyectoGif } from './ProyectoGif' //Importa el componente ProyectoGif desde el archivo ProyectoGif.jsx
 import './styles.css' //Importa los estilos CSS
+import { Footer } from './components/Footer'
 
 
 // Renderiza el componente ProyectoGif dentro del elemento con id 'root'
@@ -9,5 +10,6 @@ import './styles.css' //Importa los estilos CSS
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode> 
     <ProyectoGif />
+    <Footer />
   </React.StrictMode>,
 )
